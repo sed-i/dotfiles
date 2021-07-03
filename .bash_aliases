@@ -1,0 +1,5 @@
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'
+alias gs='git status '
+alias ga='git add '
+alias gco='git checkout '
+alias got='git '

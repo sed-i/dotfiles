@@ -1,0 +1,13 @@
+[user]
+	email = 82407168+sed-i@users.noreply.github.com
+	name = sed-i
+[alias]
+	lol = log --oneline
+	plol = log --pretty=format:\"%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(10,trunc)%aN %C(auto,reset)%s%C(auto,red)% gD% D\" --date=relative
+	adog = log --all --decorate --oneline --graph
+	alias = config --get-regexp alias
+	co = checkout
+	st = status
+	sdiff = difftool --staged --dir-diff
+[cola]
+	spellcheck = false
