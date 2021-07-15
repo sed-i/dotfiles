@@ -11,3 +11,5 @@
 	sdiff = difftool --staged --dir-diff
 [cola]
 	spellcheck = false
+[credential]
+	helper = store
