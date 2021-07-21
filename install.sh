@@ -21,6 +21,11 @@ install_zsh() {
 # Install zsh if needed
 which zsh > /dev/null || install_zsh
 
+# Install fuzzy finder
+sudo apt install -y fzf
+echo "Remeber to add the following to ~/.zshrc:"
+echo "source /usr/share/doc/fzf/examples/key-bindings.zsh"
+
 echo "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
