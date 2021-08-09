@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+reporoot=$(git rev-parse --show-toplevel)
+cd $reporoot
+
+if [[ -f venv/bin/activate && -f ./run_tests ]]; then
+    source venv/bin/activate && tox -e lint && tox -e unit
+    retval=$?
+else
+    retval=0
+fi
+
+cd -
+exit $retval
+

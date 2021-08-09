@@ -9,7 +9,14 @@
 	co = checkout
 	st = status
 	sdiff = difftool --staged --dir-diff
+	adam = "!func(){ git add -u && git commit --amend --no-edit; }; func"
 [cola]
 	spellcheck = false
 [credential]
 	helper = store
+[merge]
+	tool = bc
+[diff]
+	tool = bc
+[core]
+	hooksPath = /home/tux/.githooks

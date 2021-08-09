@@ -75,6 +75,8 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   virtualenv
+  colored-man-pages
+  juju
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -92,6 +94,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -105,3 +108,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+
