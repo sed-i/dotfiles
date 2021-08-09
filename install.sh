@@ -60,3 +60,7 @@ echo "alias dotfiles='git --git-dir=\$HOME/dotfiles.git --work-tree=\$HOME'"
 # do not show untracked files
 dotfiles config --local status.showUntrackedFiles no
 
+# vim stuff
+# Install vim-plug (https://github.com/junegunn/vim-plug)
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
