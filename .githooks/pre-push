@@ -3,8 +3,8 @@
 reporoot=$(git rev-parse --show-toplevel)
 cd $reporoot
 
-if [[ -f venv/bin/activate && -f ./run_tests ]]; then
-    source venv/bin/activate && tox -e lint && tox -e unit
+if [[ -f ./tox.ini ]]; then
+    tox -e lint && tox -e unit
     retval=$?
 else
     retval=0

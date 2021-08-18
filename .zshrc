@@ -71,6 +71,7 @@ ZSH_THEME="bureau"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  fzf
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -108,5 +109,4 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'
-source /usr/share/doc/fzf/examples/key-bindings.zsh
 

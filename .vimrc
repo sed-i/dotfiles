@@ -22,7 +22,7 @@ let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'bubblegum'
 let g:airline#extensions#virtualenv#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#ale#enabled = 1
 let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
@@ -30,7 +30,7 @@ let airline#extensions#ale#warning_symbol = 'W:'
 let g:gitgutter_highlight_linenrs = 1
 
 if has("gui_running")
-  set guifont=JetBrains\ Mono\ 11
+  set guifont=Fira Code\ 11
 endif
 
 set number
