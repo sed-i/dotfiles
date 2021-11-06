@@ -78,6 +78,7 @@ plugins=(
   virtualenv
   colored-man-pages
   juju
+  colorize
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,4 +110,5 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'
+alias img='yq eval ".resources[].upstream-source" metadata.yaml'
 

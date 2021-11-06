@@ -1,15 +1,13 @@
 #!/bin/bash -e
 
 reporoot=$(git rev-parse --show-toplevel)
-cd $reporoot
 
-if [[ -f ./tox.ini ]]; then
-    tox -e lint && tox -e unit
-    retval=$?
-else
-    retval=0
+if [[ -f $reporoot/tox.ini ]]; then
+    toxenvs=( "lint" "static" "unit" )
+    for toxenv in "${toxenvs[@]}"; do
+        if ! [[ -z $(tox -a | grep $toxenv) ]]; then
+            tox -e $toxenv
+        fi
+    done
 fi
-
-cd -
-exit $retval
 

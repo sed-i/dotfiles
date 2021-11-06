@@ -21,3 +21,5 @@
 [core]
 	hooksPath = /home/tux/.githooks
 	excludesfile = /home/tux/.git-exclude-global
+[init]
+	defaultBranch = main
