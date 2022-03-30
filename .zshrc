@@ -79,6 +79,7 @@ plugins=(
   colored-man-pages
   juju
   colorize
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-export EDITOR='nvim'
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -111,4 +112,6 @@ export EDITOR='nvim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=$HOME/dotfiles.git --work-tree=$HOME'
 alias img='yq eval ".resources[].upstream-source" metadata.yaml'
+
+# eval "$(starship init zsh)"
 
